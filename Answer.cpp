@@ -7,6 +7,7 @@
 //
 
 #include "Answer.hpp"
+// хуй
 //реализация конструктора по умолчанию
 template <typename T>
 Answer<T>::Answer() : name("-")
