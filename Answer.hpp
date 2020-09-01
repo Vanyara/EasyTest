@@ -12,14 +12,15 @@
 #include <stdio.h>
 #include "pch.h"
 
+template<typename T>
 class Answer{
 //    ответ введенный пользователем
-    int answ;
+    T name;
 public:
 //    конструктор по умолчанию
     Answer();
 //    инициализация ответа
-    Answer(int name);
+    Answer(T name);
 //    вывод ответа
     void displayAnsw();
 //    все реализации функций находятся в "Answer.cpp"

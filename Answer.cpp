@@ -8,21 +8,23 @@
 
 #include "Answer.hpp"
 //реализация конструктора по умолчанию
-
-Answer::Answer() : answ(0)
+template <typename T>
+Answer<T>::Answer() : name("-")
 {
     
 }
 // реализация ответа
+template <typename T>
 
-Answer::Answer(int answ) : answ(answ)
+Answer<T>::Answer(T name) : name(name)
 {
     
 }
 //вывод ответа
+template <typename T>
 
-void Answer::displayAnsw()
+void Answer<T>::displayAnsw()
 {
-    cout << "The entered answer is:" << answ << endl;
+    cout << "The entered answer is:" << name << endl;
 }
 
